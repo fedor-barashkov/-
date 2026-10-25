@@ -1,0 +1,11 @@
+# Локальные данные и секреты
+.env
+.env.*
+!.env.example
+node_modules/
+.DS_Store
+Thumbs.db
+local-data/
+exports/
+waybill-input*.json
+*.log

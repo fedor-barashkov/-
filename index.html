@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Путевые листы — исходный шаблон</title><link rel="stylesheet" href="styles.css"></head>
+<body><main><h1>Заполнение путевых листов</h1><p class="notice">Подготовка данных. Для заполнения формы № 3 требуется оригинальный файл шаблона. Печатная форма не подменяется собственной вёрсткой.</p>
+<form id="form"><label>Организация<input name="organization"></label><label>Автомобиль<input name="vehicle" value="Lexus LX 470, 2000 г.в."></label><label>Государственный номер<input name="plate"></label><label>Водитель<input name="driver"></label><label>Агент<input name="agent"></label><label>Месяц<input name="month" type="month" required></label>
+<label>Бензин по накладным, л<input name="petrolReceipts" type="number" min="0" step="0.01"></label><label>Газ по накладным, л<input name="gasReceipts" type="number" min="0" step="0.01"></label>
+<label>Остаток бензина на начало, л<input name="petrolOpening" type="number" min="0" step="0.01"></label><label>Остаток бензина на конец, л<input name="petrolClosing" type="number" min="0" step="0.01"></label>
+<label>Остаток газа на начало, л<input name="gasOpening" type="number" min="0" step="0.01"></label><label>Остаток газа на конец, л<input name="gasClosing" type="number" min="0" step="0.01"></label>
+<button type="submit">Сохранить входные данные в JSON</button></form><p id="status" role="status"></p></main><script src="app.js"></script></body></html>
